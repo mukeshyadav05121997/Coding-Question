@@ -1,0 +1,22 @@
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string msg = "Hi Mukeshhh";
+            int len = msg.Length - 1;
+            string newMsg=string.Empty;
+
+            for(int i = 0; i <len; i++) 
+            {
+                if (!newMsg.Contains(msg[i]))
+                {
+                    newMsg=newMsg+ msg[i];
+                }
+            }
+
+            Console.WriteLine(newMsg);
+          
+            Console.ReadLine();
+        }
+    }
+}
